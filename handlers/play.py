@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("𝐫𝐮𝐤𝐨 𝐣𝐚𝐫𝐚 𝐬𝐚𝐛𝐚𝐫 𝐤𝐫𝐨 .........😂...**")
+    lel = await message.reply("Dunda ja rha hai ...**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -222,11 +222,11 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?🧐 **")
+            return await lel.edit("🧐 **kaisa song bajanan chate ho?🧐 **")
         await lel.edit("🔎 **Finding the song...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("🎵 **𝐫𝐮𝐤𝐨 𝐣𝐚𝐫𝐚 𝐬𝐚𝐛𝐚𝐫 𝐤𝐫𝐨 .........😂...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
