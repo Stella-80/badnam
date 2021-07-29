@@ -7,7 +7,7 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("https://telegra.ph/file/26d1fa8e4642ab680305a.jpg")
+    await message.reply_sticker("CAACAgUAAx0CW4Te_AACBQABYQIdM_Dz_NmYSEXo82pxrisWE8IAAoYCAAK7thFUQLil0Gld--oeBA")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
 
